@@ -46,7 +46,7 @@ Ensure you have Python installed on your machine. This project uses Poetry for d
 1. **Launch Jupyter Notebook**
 
    ```sh
-   poetry run jupyter notebook
+   poetry run start-notebook
    ```
 
 2. **Open the Notebook**

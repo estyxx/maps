@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "maps"
 version = "0.1.0"
-description = ""
-authors = ["Ester Beltrami <beltrami.ester@gmail.com>"]
+description = "A project to visualize the provinces of the Emilia-Romagna region in Italy."
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -11,6 +11,9 @@ geopandas = "^1.0.0"
 matplotlib = "^3.9.0"
 shapely = "^2.0.4"
 notebook = "^7.2.1"
+
+[tool.poetry.scripts]
+start-notebook = "start_notebook:start_notebook"
 
 [build-system]
 requires = ["poetry-core"]
