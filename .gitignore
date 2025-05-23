@@ -81,3 +81,8 @@ venv.bak/
 # Other files and directories created by the OS
 Thumbs.db
 ehthumbs.db
+
+
+# GADM shp files
+*.shp
+GADM Italy
