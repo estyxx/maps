@@ -1,20 +1,19 @@
-[tool.poetry]
+[project]
 name = "maps"
 version = "0.1.0"
 description = "A project to visualize the provinces of the Emilia-Romagna region in Italy."
-authors = ["Your Name <you@example.com>"]
 readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "geopandas>=1.0.1",
+    "matplotlib>=3.10.3",
+    "notebook>=7.4.2",
+    "shapely>=2.1.1",
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-geopandas = "^1.0.0"
-matplotlib = "^3.9.0"
-shapely = "^2.0.4"
-notebook = "^7.2.1"
+[project.scripts]
+start-notebook = "start_notebook:main"
 
-[tool.poetry.scripts]
-start-notebook = "start_notebook:start_notebook"
+[dependency-groups]
+dev = ["ipykernel>=6.29.5", "pre-commit>=4.2.0", "ruff>=0.11.11"]
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"

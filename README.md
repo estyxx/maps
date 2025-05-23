@@ -6,7 +6,7 @@ This project provides a visual representation of the provinces in the Emilia-Rom
 
 ### Prerequisites
 
-Ensure you have Python installed on your machine. This project uses Poetry for dependency management and Jupyter Notebook for running the script.
+Ensure you have Python installed on your machine. This project uses `uv` for dependency management and Jupyter Notebook for running the script.
 
 ### Installation
 
@@ -19,16 +19,12 @@ Ensure you have Python installed on your machine. This project uses Poetry for d
 
 2. **Install Dependencies**
 
-   This project uses [Poetry](https://python-poetry.org/) for dependency management. Install Poetry if you haven't already.
-
-   ```sh
-   curl -sSL https://install.python-poetry.org | python3 -
-   ```
+   This project uses [uv](https://docs.astral.sh/uv) for dependency management. Install uv if you haven't already.
 
    Then, install the project dependencies:
 
    ```sh
-   poetry install
+   uv sync
    ```
 
 ### Download GADM Data
@@ -46,7 +42,7 @@ Ensure you have Python installed on your machine. This project uses Poetry for d
 1. **Launch Jupyter Notebook**
 
    ```sh
-   poetry run start-notebook
+   uv run jupyter notebook
    ```
 
 2. **Open the Notebook**
